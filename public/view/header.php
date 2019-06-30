@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="http://localhost/old-mobile/public/assets/css/bootstrap.css"/>
           <link rel="stylesheet" href="http://localhost/old-mobile/public/assets/css/estilo.css"/>
-        <script src="http://localhost/old-mobile/public/assets/css/jquery-3.3.1.min.js"></script>
+        <script src="http://localhost/old-mobile/public/assets/js/jquery-3.3.1.min.js"></script>
         <script src="http://localhost/old-mobile/public/assets/js/bootstrap.min.js"></script>  
     </head>
     <body>
@@ -30,6 +30,10 @@
                          <a class="" href="cadastro-produto"> <i class="fa fa-shopping-cart pr-1"></i> Cadastro Produto</a>                  
                         </li>
                         
+                         <li class="nav-item">
+                         <a class="" href="cadastro-cliente"> <i class="fa fa-shopping-cart pr-1"></i> Cadastro Cliente</a>                  
+                        </li>
+                        cadastro-cliente
                          <li class="nav-item ">
                             <a href="lista-produto"><i class="fa fa-file-text pr-1"></i> Lista Produto</a>
                         </li>

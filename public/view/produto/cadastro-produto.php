@@ -1,4 +1,6 @@
-<?php require __DIR__ . '/../header.php'; 
+<?php 
+session_start();
+require __DIR__ . '/../header.php'; 
 
 $categorias = new ADS\OldMobile\Controller\CategoriaController;
 $listaCategoria = $categorias->findAll();
@@ -51,7 +53,13 @@ $listaCategoria = $categorias->findAll();
                     </select>                         
                     
                      <label for="qtd">Quantidade Estoque</label>
-                    <input type="text" name="qtd" id="qtd"  class="form-control">                   
+                     
+                    <input type="text" name="qtd" id="qtd"  class="form-control">   
+                    <?php if(isset($_SESSION['msg'])){
+                        echo $_SESSION['msg'];
+                        unset($_SESSION['msg']);
+                    }
+?>
                   
                     <input type="submit" value="Cadastrar" class="btn btn-primary mt-3"/>                    
                 </form>               

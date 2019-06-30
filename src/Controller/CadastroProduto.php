@@ -1,7 +1,8 @@
 <?php
 
-namespace ADS\OldMobile\Controller;
 
+namespace ADS\OldMobile\Controller;
+session_start();
 use ADS\OldMobile\Infra\EntityManagerCreator;
 use ADS\OldMobile\Entity\Produto;
 
@@ -15,7 +16,12 @@ class CadastroProduto implements InterfaceControladorRequisicao{
     
        public function filtraInput($nomeCampo,$tipo){
         $result = filter_input($tipo, $nomeCampo, FILTER_SANITIZE_SPECIAL_CHARS);
-        $resultado = filter_var($result);  
+        $resultado = filter_var($result); 
+        var_dump($resultado);
+        if($resultado == false || $resultado == ""){
+            $_SESSION['msg'] = "campo invalido";
+            header("location:cadastro-produto");
+        }
         return $resultado;
     }    
     
@@ -27,6 +33,7 @@ class CadastroProduto implements InterfaceControladorRequisicao{
        
         $nome = CadastroProduto::filtraInput("nome",INPUT_POST);
         $descricao = CadastroProduto::filtraInput("descricao",INPUT_POST);
+        
         $qtdEstoque = CadastroProduto::filtraInput('qtd', INPUT_POST);
     
         $codigo = CadastroProduto::filtraInput('codigo', INPUT_POST);
