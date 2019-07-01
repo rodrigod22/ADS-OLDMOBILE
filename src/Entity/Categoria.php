@@ -8,7 +8,7 @@ namespace ADS\OldMobile\Entity;
 class Categoria 
 {  
     /**
-     *@Id
+     * @Id
      * @GeneratedValue(strategy="IDENTITY")
      * @Column(type="integer")
      */

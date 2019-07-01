@@ -29,11 +29,11 @@ class Cliente {
      */
     private  $cpf;
     /**
-     * @OnetoMany(targetEntity="Telefone", mappedBy="cliente")
+     * @OneToMany(targetEntity="Telefone", mappedBy="cliente", cascade={"remove", "persist"})
      */
     private  $telefone;
      /**
-     * @OnetoMany(targetEntity="Endereco", mappedBy="cliente")
+     * @OneToMany(targetEntity="Endereco", mappedBy="cliente", cascade={"remove", "persist"})
      */ 
     private  $endereco;
 
@@ -98,6 +98,7 @@ class Cliente {
      public function addEndereco(Endereco $endereco)
     {        
         $this->endereco->add($endereco);
+        $endereco->setCliente($this);
         return $this;        
     }
     

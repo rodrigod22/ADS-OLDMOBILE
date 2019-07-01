@@ -3,14 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/old-mobile/src/Controller/CadastroProduto.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/Entity/Produto.php</file>
             <file>file:/C:/wamp64/www/old-mobile/config/routes/routes.php</file>
             <file>file:/C:/wamp64/www/old-mobile/index.php</file>
-            <file>file:/C:/wamp64/www/old-mobile/src/Controller/FormularioProduto.php</file>
-            <file>file:/C:/wamp64/www/old-mobile/src/Controller/CategoriaController.php</file>
-            <file>file:/C:/wamp64/www/old-mobile/public/view/header.php</file>
-            <file>file:/C:/wamp64/www/old-mobile/public/view/produto/cadastro-produto.php</file>
-            <file>file:/C:/wamp64/www/old-mobile/src/Controller/ListarProduto.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/public/view/produto/lista-cliente.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/Controller/CadastroCliente.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/Entity/Telefone.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/Controller/ListaCliente.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/public/view/produto/cadastro-cliente.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/Infra/EntityManagerCreator.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/Entity/Cliente.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/Entity/Endereco.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/config.php</file>
+            <file>file:/C:/wamp64/www/old-mobile/src/Entity/Categoria.php</file>
         </group>
     </open-files>
 </project-private>

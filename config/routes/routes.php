@@ -9,6 +9,7 @@ $rotas = [
     '/salva-produto' => \ADS\OldMobile\Controller\CadastroProduto::class,
     '/index' => \ADS\OldMobile\Controller\HomeController::class,
     '/salva-cliente' => \ADS\OldMobile\Controller\CadastroCliente::class,
+    '/lista-cliente' => \ADS\OldMobile\Controller\ListaCliente::class,
 ];
 
 return $rotas;

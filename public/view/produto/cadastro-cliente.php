@@ -31,6 +31,12 @@ $listaCategoria = $categorias->findAll();
             
             <h2 class="mt-4 mb-4">Cadastro Cliente</h2>
             <div class="form-group">
+                  <?php if(isset($_SESSION['crud'])){?> 
+                        <div class="alert-success alert">
+                           <?php echo $_SESSION['crud'];unset($_SESSION['crud']);?>
+                        </div>
+                    <?php } ?>             
+                
                 <form method="post" action="salva-cliente">
                     
                     <label for="nome">Nome</label>
@@ -45,7 +51,7 @@ $listaCategoria = $categorias->findAll();
                     
                      
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email"  class="form-control">
+                    <input type="email" name="email" id="email"  class="form-control" value="<?php if(isset($_SESSION['email'])){echo $_SESSION['email'];unset($_SESSION['email']);} ?>">
                      <?php if(isset($_SESSION['msg-email'])){?> 
                         <div class="alert-danger alert">
                            <?php echo $_SESSION['msg-email'];unset($_SESSION['msg-email']);?>
@@ -65,24 +71,27 @@ $listaCategoria = $categorias->findAll();
                     
                     <div class="form-group mt-4">
                     <label for="cpf">CPF</label>
-                    <input type="text" name="cpf" id="cpf"  class="form-control">
+                    <input type="text" name="cpf" id="cpf"  class="form-control" value="<?php if(isset($_SESSION['cpf'])){echo $_SESSION['cpf'];unset($_SESSION['cpf']);} ?>">
                     </div>
                                       
                     <div class="row p-0 m-0 mt-5 mb-3"><h4>ENDEREÇO</h4></div>
                     <label for="rua">Rua</label>
-                    <input type="text" name="rua" id="rua"  class="form-control"> 
+                    <input type="text" name="rua" id="rua"  class="form-control" value="<?php if(isset($_SESSION['rua'])){echo $_SESSION['rua'];unset($_SESSION['rua']);} ?>"> 
                     
                     <label for="numero">Numero</label>
-                    <input type="text" name="numero" id="numero"  class="form-control">
+                    <input type="text" name="numero" id="numero"  class="form-control" value="<?php if(isset($_SESSION['numero'])){echo $_SESSION['numero'];unset($_SESSION['numero']);} ?>">
                     
                     <label for="complemento">Complemento</label>
-                    <input type="text" name="complemento" id="complemento"  class="form-control">
+                    <input type="text" name="complemento" id="complemento"  class="form-control" value="<?php if(isset($_SESSION['complemento'])){echo $_SESSION['complemento'];unset($_SESSION['comlemento']);} ?>">
                     
                     <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade" id="cidade"  class="form-control">
+                    <input type="text" name="cidade" id="cidade"  class="form-control" value="<?php if(isset($_SESSION['cidade'])){echo $_SESSION['cidade'];unset($_SESSION['cidade']);} ?>">
+                    
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro"  class="form-control"value="<?php if(isset($_SESSION['bairro'])){echo $_SESSION['bairro'];unset($_SESSION['bairro']);} ?>">
                     
                     <label for="cidade">UF</label>
-                    <input type="text" name="uf" id="uf"  class="form-control">
+                    <input type="text" name="uf" id="uf"  class="form-control" value="<?php if(isset($_SESSION['uf'])){echo $_SESSION['uf'];unset($_SESSION['uf']);} ?>">
                                        
                     <?php if(isset($_SESSION['msg'])){
                         echo $_SESSION['msg'];

@@ -1,9 +1,6 @@
 {
-    "name": "ads-fatec-manha/old-mobile",
-    "description": "plataforma eletrica",
-
-    "type": "project",
-
+    "name": "ads/old-mobile",
+    "description": "projeto plataforma old-mobile",
     "authors": [
         {
             "name": "rodrigod22",
@@ -13,11 +10,13 @@
     "require": {
         "doctrine/orm": "^2.6"
     },
-
+    
     "autoload": {
-
+               
         "psr-4": {
-            "ADS\\OldMobile\\": "src/"
+            "ADS\\OldMobile\\": "src/"            
         }
     }
+    
+    
 }

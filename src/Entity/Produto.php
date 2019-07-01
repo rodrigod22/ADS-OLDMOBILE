@@ -9,8 +9,8 @@ namespace ADS\OldMobile\Entity;
 class Produto 
 {   
     /**
-     *@Id
-     *@GeneratedValue(strategy="IDENTITY")
+     * @Id
+     * @GeneratedValue(strategy="IDENTITY")
      * @Column(type="integer")
      */
     private $id;
@@ -33,7 +33,7 @@ class Produto
     private $qtdEstoque;
     
     /**
-     *@ManyToOne(targetEntity="Categoria", inversedBy="produto")
+     *@ManyToOne(targetEntity="Categoria")
      */     
         private $categoria;
     /**

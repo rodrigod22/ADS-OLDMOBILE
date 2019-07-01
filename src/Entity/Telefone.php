@@ -19,7 +19,7 @@ class Telefone {
     private $numero;
     
     /**
-     * @ManytoOne(targetEntity="Cliente")
+     * @ManyToOne(targetEntity="Cliente")
      */
     private $cliente;
     

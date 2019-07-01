@@ -14,7 +14,7 @@ class EntityManagerCreator
         $isDevMode = true;
 
         $dbParams = array(
-            'dbname' => 'sistema_ordemaq',
+            'dbname' => 'old-mobile',
             'user' => 'root',
             'password' => 'root',
             'host' => 'localhost:3308',
